@@ -1,0 +1,107 @@
+/* =========================
+   Base Setup
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#e0f2fe,#f5f3ff,#ecfccb);
+}
+
+/* =========================
+   Container
+========================= */
+
+.container{
+    width:100%;
+    max-width:400px;
+}
+
+/* =========================
+   Card
+========================= */
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    text-align:center;
+    animation:fade 0.4s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   Text
+========================= */
+
+h1{
+    margin-bottom:6px;
+    color:#1f2937;
+}
+
+p{
+    color:#6b7280;
+    margin-bottom:20px;
+}
+
+/* =========================
+   Timer
+========================= */
+
+.timer{
+    font-size:48px;
+    font-weight:700;
+    margin:20px 0;
+    color:#4f46e5;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.buttons{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+    background:#eef2ff;
+    color:#4f46e5;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+.primary{
+    background:linear-gradient(135deg,#6366f1,#4f46e5);
+    color:#fff;
+}
